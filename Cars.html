@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ar" xml:lang="ar" dir="rtl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>مكتب الكرم للسيارات - السيارات</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="fonts/JF-Flat-regular.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="images/logo.png" />
+</head>
+<body>
+
+    <header>
+        <div class="alkaram">
+            <h1>مكتب الكرم للسيارات</h1>
+            <img src="images/logo.png" alt="شعار مكتب الكرم" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">الرئيسية</a></li>
+                <li><a href="About.html">من نحن</a></li>
+                <li><a href="Cars.html">السيارات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <h2 class="page-title">قائمة السيارات المتوفرة</h2>
+        <hr />
+        <p>اختر السيارة أو السيارات المطلوبة ثم اضغط على زر متابعة لإتمام الحجز</p>
+
+        <table class="mytable">
+            <thead>
+                <tr>
+                    <th>الصورة</th>
+                    <th>الرمز</th>
+                    <th>الموديل</th>
+                    <th>سنة الصنع</th>
+                    <th>السعر اليومي</th>
+                    <th>إظهار التفاصيل</th>
+                    <th>اختيار</th>
+                </tr>
+            </thead>
+            <tbody>
+
+                    <tr class="car-row">
+                        <td data-label="الصورة"><img class="car-img" src="images/corolla.jpg" alt="Toyota Corolla" /></td>
+                        <td data-label="الرمز">CR-001</td>
+                        <td data-label="الموديل">Toyota Corolla</td>
+                        <td data-label="سنة الصنع">2023</td>
+                        <td data-label="السعر اليومي">250,000 ل.س</td>
+                        <td data-label="إظهار التفاصيل">
+                            <input type="checkbox" class="toggle-details" data-target="details-1" />
+                        </td>
+                        <td data-label="اختيار">
+                            <input type="checkbox" name="carSelect" value="CR-001" />
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="7">
+                            <div id="details-1" class="car-details">
+                                نوع الوقود: بنزين - ناقل الحركة: أوتوماتيك - عدد المقاعد: 5 - عداد الكيلومترات: 20,000 كم - اللون: أبيض
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="car-row">
+                        <td data-label="الصورة"><img class="car-img" src="images/sportage.jpg" alt="Kia Sportage" /></td>
+                        <td data-label="الرمز">CR-002</td>
+                        <td data-label="الموديل">Kia Sportage</td>
+                        <td data-label="سنة الصنع">2022</td>
+                        <td data-label="السعر اليومي">400,000 ل.س</td>
+                        <td data-label="إظهار التفاصيل">
+                            <input type="checkbox" class="toggle-details" data-target="details-2" />
+                        </td>
+                        <td data-label="اختيار">
+                            <input type="checkbox" name="carSelect" value="CR-002" />
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="7">
+                            <div id="details-2" class="car-details">
+                                نوع الوقود: بنزين - ناقل الحركة: أوتوماتيك - عدد المقاعد: 5 - عداد الكيلومترات: 45,000 كم - اللون: أسود
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="car-row">
+                        <td data-label="الصورة"><img class="car-img" src="images/elantra.jpg" alt="Hyundai Elantra" /></td>
+                        <td data-label="الرمز">CR-003</td>
+                        <td data-label="الموديل">Hyundai Elantra</td>
+                        <td data-label="سنة الصنع">2024</td>
+                        <td data-label="السعر اليومي">300,000 ل.س</td>
+                        <td data-label="إظهار التفاصيل">
+                            <input type="checkbox" class="toggle-details" data-target="details-3" />
+                        </td>
+                        <td data-label="اختيار">
+                            <input type="checkbox" name="carSelect" value="CR-003" />
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="7">
+                            <div id="details-3" class="car-details">
+                                نوع الوقود: بنزين - ناقل الحركة: أوتوماتيك - عدد المقاعد: 5 - عداد الكيلومترات: 5,000 كم - اللون: فضي
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="car-row">
+                        <td data-label="الصورة"><img class="car-img" src="images/spark.jpg" alt="Chevrolet Spark" /></td>
+                        <td data-label="الرمز">CR-004</td>
+                        <td data-label="الموديل">Chevrolet Spark</td>
+                        <td data-label="سنة الصنع">2021</td>
+                        <td data-label="السعر اليومي">180,000 ل.س</td>
+                        <td data-label="إظهار التفاصيل">
+                            <input type="checkbox" class="toggle-details" data-target="details-4" />
+                        </td>
+                        <td data-label="اختيار">
+                            <input type="checkbox" name="carSelect" value="CR-004" />
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="7">
+                            <div id="details-4" class="car-details">
+                                نوع الوقود: بنزين - ناقل الحركة: عادية - عدد المقاعد: 4 - عداد الكيلومترات: 60,000 كم - اللون: أحمر
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr class="car-row">
+                        <td data-label="الصورة"><img class="car-img" src="images/logan.jpg" alt="Renault Logan" /></td>
+                        <td data-label="الرمز">CR-005</td>
+                        <td data-label="الموديل">Renault Logan</td>
+                        <td data-label="سنة الصنع">2022</td>
+                        <td data-label="السعر اليومي">200,000 ل.س</td>
+                        <td data-label="إظهار التفاصيل">
+                            <input type="checkbox" class="toggle-details" data-target="details-5" />
+                        </td>
+                        <td data-label="اختيار">
+                            <input type="checkbox" name="carSelect" value="CR-005" />
+                        </td>
+                    </tr>
+                    <tr class="details-row">
+                        <td colspan="7">
+                            <div id="details-5" class="car-details">
+                                نوع الوقود: بنزين - ناقل الحركة: عادية - عدد المقاعد: 5 - عداد الكيلومترات: 50,000 كم - اللون: أزرق
+                            </div>
+                        </td>
+                    </tr>
+
+            </tbody>
+        </table>
+
+        <div class="booking-actions">
+            <input type="button" id="continueBtn" value="متابعة" />
+        </div>
+
+        <div id="formBox">
+            <h2 class="page-title">نموذج طلب الحجز</h2>
+
+            <form id="rentalForm" action="#" method="get" novalidate="novalidate">
+                <fieldset class="booking-fieldset">
+                    <legend>بيانات الحجز</legend>
+
+                    <div class="booking-fields">
+
+                        <div class="booking-field">
+                            <label for="fullName">الاسم الكامل:</label>
+                            <input type="text" id="fullName" name="fullName" />
+                        </div>
+
+                        <div class="booking-field">
+                            <label for="nationalId">الرقم الوطني *:</label>
+                            <input type="text" id="nationalId" name="nationalId" maxlength="11" />
+                        </div>
+
+                        <div class="booking-field">
+                            <label for="startDate">تاريخ البداية *:</label>
+                            <input type="date" id="startDate" name="startDate" />
+                        </div>
+
+                        <div class="booking-field">
+                            <label for="endDate">تاريخ النهاية *:</label>
+                            <input type="date" id="endDate" name="endDate" />
+                        </div>
+
+                        <div class="booking-field">
+                            <label for="mobile">رقم الموبايل:</label>
+                            <input type="tel" id="mobile" name="mobile" maxlength="10" />
+                        </div>
+
+                        <div class="booking-field">
+                            <label for="email">البريد الإلكتروني:</label>
+                            <input type="email" id="email" name="email" />
+                        </div>
+
+                    </div>
+
+                    <div class="booking-actions">
+                        <input type="submit" value="إرسال" />
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+
+        <div class="result-box" id="resultBox">
+            <div id="resultContent"></div>
+        </div>
+
+    </div>
+
+    <footer>
+        جميع الحقوق محفوظة &copy; 2026 <span>مكتب الكرم للسيارات</span>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="myFunctions.js"></script>
+
+</body>
+</html>
